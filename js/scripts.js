@@ -15,7 +15,7 @@ $(document).ready(function(){
     $("#favThingsList").append("<li>" + array2[0] + "</li>")
     $("#favThingsList").append("<li>" + array2[1] + "</li>")
     $("#favThingsList").append("<li>" + array2[2] + "</li>")
-    $("#favThingsList").append("<li>" + array2[3] + "</li>")
+
 
     $("#favThings").show()
   });
