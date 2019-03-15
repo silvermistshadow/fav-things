@@ -7,13 +7,17 @@ $(document).ready(function(){
     var hobby = $("input#hobby").val();
 
     var favThings = [favAnimal, iceCream, favFood, hobby]
+    var array2 = [];
+    array2.push(favThings[1]);
+    array2.push(favThings[2]);
+    array2.push(favThings[3]);
 
-    $('ul#favThingsList').children('li').first().text(favThings[0]);
-    $('ul#favThingsList').children('li').second().text(favThings[1]);
-    $('ul#favThingsList').children('li').third().text(favThings[2]);
-    $('ul#favThingsList').children('li').last().text(favThings[3]);
+    $("#favThingsList").append("<li>" + array2[0] + "</li>")
+    $("#favThingsList").append("<li>" + array2[1] + "</li>")
+    $("#favThingsList").append("<li>" + array2[2] + "</li>")
+    $("#favThingsList").append("<li>" + array2[3] + "</li>")
 
-    $("#favThings").show();
+    $("#favThings").show()
   });
 
 
